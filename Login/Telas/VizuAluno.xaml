@@ -1,0 +1,53 @@
+﻿<Window x:Class="Login.Telas.VizuAluno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login.Telas"
+        mc:Ignorable="d"
+        Title="VizuAluno" Height="510" Width="800">
+    <Grid>
+       
+        <Grid Background="MediumPurple">
+            <StackPanel>
+                <Button Grid.Column="0" Content="X" FontSize="30" Foreground="White" Padding="4" Width="50" Height="50" Margin="3 10 740 500" Background="MediumPurple" BorderBrush="Transparent">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value=" 6">
+
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+
+
+
+            </StackPanel>
+           
+
+            <TextBlock Text="Visualizar Curso"
+    FontSize="35" 
+    HorizontalAlignment="Center" Margin="0 10 0 40"
+    Grid.Column="1" FontFamily="Bodoni MT" Foreground="White" FontWeight="ExtraBlack" />
+            
+
+            <DataGrid Grid.Column="1" x:Name="dataGrid" AutoGenerateColumns="False" Margin="40,66,40,26" Background="#F4E9FF">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="40" />
+                    <DataGridTextColumn Header="Nome" Binding="{Binding NomeCurso}" Width="100"/>
+                    <DataGridTextColumn Header="CPF" Binding="{Binding Codigo}" Width="90"/>
+                    <DataGridTextColumn Header="RG" Binding="{Binding coordenador}" Width="60"/>
+                    <DataGridTextColumn Header="Sexo" Binding="{Binding Descricao}" Width="90"/>
+                    <DataGridTextColumn Header="Data de Nascimento" Binding="{Binding Ativo}" Width="120"/>
+                    <DataGridTextColumn Header="Telefone" Binding="{Binding Ativo}" Width="100"/>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Ativo}" Width="700"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+
+    </Grid>
+</Window>

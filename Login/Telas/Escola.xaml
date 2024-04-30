@@ -1,0 +1,250 @@
+﻿<Window x:Class="Login.Telas.Escola"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login.Telas"
+        mc:Ignorable="d"
+        Title="Escola" Height="530" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="0.4*"/>
+
+            <ColumnDefinition Width="*"/>
+
+
+
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="1" Background="White"/>
+        <StackPanel Grid.Column="1" Margin="30" VerticalAlignment="Top" >
+
+            <TextBlock Text="Escola" FontSize="25" FontWeight="ExtraBlack" HorizontalAlignment="Left" Foreground="MediumPurple"/>
+            <Label Content=" Buscar"  FontSize="15" Foreground="MediumPurple" Margin="9 0" HorizontalAlignment="Left"/>
+            
+                <TextBox FontSize="10" Padding="2" Margin="0">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value=" 6">
+
+                            </Setter>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+
+
+
+
+                <Label Content="Nome Fantasia" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value=" 6">
+
+                            </Setter>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+
+
+                <Label Content="Razão Social" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+
+            <Label Content="CNPJ" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+
+            <Label Content="Endereço" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+
+            <Label Content="Cidade" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+
+            <Label Content="Cidade" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0" >
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+            <Label Content="Estado" FontSize="14" FontWeight="Bold" Foreground="MediumPurple" HorizontalAlignment="Left"/>
+            <TextBox FontSize="10" Padding="3" Margin="0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+    
+
+
+
+
+
+
+        </StackPanel>
+
+        <Border Grid.Column="0" Background="MediumPurple"/>
+        <StackPanel Grid.Column="0" Margin="30" VerticalAlignment="Top" >
+            <TextBlock Text="New World School" FontSize="18" Foreground="white" FontWeight="ExtraBlack" HorizontalAlignment="Left" />
+            <Button Grid.Column="0" Content="Início" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Column="0" Content="Cadastrar Aluno" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+          
+            <Button Grid.Column="0" Content="Cadastrar Escola" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Column="0" Content ="Cadastrar Curso" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="0" Content ="Cadastrar Turma" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="0" Content="Visualizar Aluno" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Column="0" Content=" Visualizar Escola" FontSize="13" Foreground="white" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" Click="Button_Click" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <Button Grid.Column="0" Content=" Visualizar curso" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 0" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Column="0" Content=" Visualizar Turma" FontSize="13" Foreground="White" Padding="4" Margin="2 8 8 80" Background="MediumPurple" BorderBrush="white" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <Button Grid.Column="0" Content="Salvar" FontSize="13" FontWeight="Black" Foreground="White" Padding="4" Margin="1 -30 8 1" Background="MediumPurple" BorderBrush="White" Click="Button_Click_1" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Grid.Column="0" Content="Cancelar" FontSize="13" FontWeight="Black" Foreground="White" Padding="4" Margin="1 0 8 1" Background="MediumPurple" BorderBrush="White" Click="Button_Click_2" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value=" 6">
+
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+          
+
+        </StackPanel>
+
+    </Grid>
+</Window>
